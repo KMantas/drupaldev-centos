@@ -1,45 +1,35 @@
-#DrupalDev nginx
+drupaldev-centos
+==========
 
-[Support on Gittip](https://www.gittip.com/mikebell/)
+Vagrant puppet drupal environment with nginx and mongodb
 
-Vagrant configuration for Drupal Development. Supports Drupal 6/7/8. Built in Drush and Composer.
+Originaly take from https://github.com/mikebell/drupaldev-nginx
 
-Need Help? Consult the [wiki](https://github.com/mikebell/drupaldev-nginx/wiki) first before submitting an issue.
+It assumes that you have CentOS virtual box with almost everything pre-installed. It just configures nginx. 
 
-#Tools
-2. Easier handling of vhosts and dbs (see example.yaml)
-3. Drush
-4. Compass
-6. APC / Memcache
-7. Mailcatcher - Can be accessed by appending :1080 to any vagrant url
-8. XHProf
-9. Solr
+adds mongodb and doesn't require Librarian Puppet
 
 #Dependencies
-* Xcode with Command Line Tools installed
 * Vagrant - http://www.vagrantup.com/
 * VirtualBox - https://www.virtualbox.org/
-* Librarian Puppet - https://github.com/rodjek/librarian-puppet
-* Pupppet Gem - `gem install puppet`
+* 
 
-#Install
+after installing Vagrant and VirtualBox install nfs. Run in command line:
+* vagrant plugin install vagrant-winnfsd
 
-1. Clone Me
-2. `cd drupaldev-nginx`
-3. `librarian-puppet install`
-3. `mkdir sites`
-4. `cp hieradata/example.yaml hieradata/sites.yaml`
-5. Amend hieradata/sites.yaml as required to desired server/virtualhost name and db details
-6. `vagrant up`
+To start VM type:
+`vagrant up`
+
+After it starts you can loging into VM with
+vagrant ssh
 
 #VM Info
 * Default IP 33.33.33.10
-* Sites built as *.drupal.dev (use dnsmasq)
 * Ubuntu 12.04
 * Mysql root password: drupaldev
-* For Windows users on Vagrant 1.5.0+ uncomment line 15 in Vagrantfile to use SMB sharing.
+* put 33.33.33.10 local.artofliving.org in your hosts file  
+* 
 
-#XHProf Details
-* Visible at xhprof.drupal.dev
-* XHProf Directory - `/usr/share/php`
-* XHProf URL - `http://xhprof.drupal.dev`
+#Make Virtual Box faster
+* Open Virtual Box manager and go to settings of your VM
+* Do changes as here http://blog.jdpfu.com/2012/09/14/solution-for-slow-ubuntu-in-virtualbox
