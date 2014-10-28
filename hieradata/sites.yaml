@@ -1,0 +1,34 @@
+---
+sites:
+    vhosts:
+        example.drupal.dev:
+            server_name: example.drupal.dev
+            server_aliases:
+                - www.example.drupal.dev
+            www_root: /var/www/example.drupal.dev
+            listen_port: '80'
+            index_files:
+                - index.php
+        local.artofliving.org:
+            server_name: local.artofliving.org            
+            www_root: /var/www/local.artofliving.org
+            listen_port: '80'
+            index_files:
+                - index.php                
+    databases:
+        example:
+            grant:
+                - ALL
+            host: localhost
+            name: example
+            user: example
+            password: example
+            sql_file: ''
+        unity:
+            grant:
+                - ALL
+            host: localhost
+            name: unity
+            user: unity
+            password: unity
+            sql_file: ''

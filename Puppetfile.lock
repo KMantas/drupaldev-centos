@@ -1,0 +1,123 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    jfryman-nginx (0.0.9)
+      puppetlabs-apt (>= 1.0.0)
+      puppetlabs-concat (>= 1.0.0)
+      puppetlabs-stdlib (>= 0.1.6)
+    maestrodev-rvm (1.5.5)
+      puppetlabs-stdlib (>= 3.2.0)
+    puppetlabs-apt (1.4.0)
+      puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-git (0.2.0)
+      puppetlabs-vcsrepo (>= 0.1.0)
+    puppetlabs-mysql (2.0.0)
+      puppetlabs-stdlib (>= 2.2.1)
+    puppetlabs-ruby (0.1.0)
+    puppetlabs-stdlib (4.1.0)
+    puppetlabs-vcsrepo (0.1.2)
+
+GIT
+  remote: git://github.com/example42/puppet-php
+  ref: v2.0.17
+  sha: bf3583c7a46131263db79d995d6a71ef1a423606
+  specs:
+    example42-php (2.0.16)
+      example42-puppi (>= 2.0.0)
+
+GIT
+  remote: git://github.com/example42/puppi
+  ref: v2.1.7
+  sha: 44032e96cdfcb66866160cf4ae5edea31296409f
+  specs:
+    example42-puppi (2.1.6)
+
+GIT
+  remote: git://github.com/logstash/puppet-logstash
+  ref: 0.3.4
+  sha: c55a14a975ff041e41516502697440f1fd66ffcf
+  specs:
+    logstash-logstash (0.3.4)
+      puppetlabs-stdlib (>= 3.0.0)
+
+GIT
+  remote: git://github.com/mikebell/puppet-mailcatcher
+  ref: 1.0.0
+  sha: b1392f79f73b2e918dadfebdd097921ad75513de
+  specs:
+    mikebell-mailcatcher (1.0.0)
+
+GIT
+  remote: git://github.com/mikebell/puppet-solr
+  ref: 9bd83e19149ed01e8b064c9dee8a074049adb84e
+  sha: 9bd83e19149ed01e8b064c9dee8a074049adb84e
+  specs:
+    mikebell-solr (0.0.5)
+
+GIT
+  remote: git://github.com/mikebell/puppet-xhprof
+  ref: 1.0
+  sha: 4a123f48ef8a23a38939ee3a883a6fe3e2bc2444
+  specs:
+    mikebell-xhprof (0.0.1)
+
+GIT
+  remote: git://github.com/nextrevision/puppet-automysqlbackup
+  ref: 752b8b9d95725112e97b5b3faa15ac369399c4b0
+  sha: 752b8b9d95725112e97b5b3faa15ac369399c4b0
+  specs:
+    nextrevision-automysqlbackup (0.2.3)
+      puppetlabs-stdlib (>= 0)
+
+GIT
+  remote: git://github.com/puphpet/puphpet-xdebug.git
+  ref: 8c515e62d2fe8aea89c24a5ed7cabf41f5626a52
+  sha: 8c515e62d2fe8aea89c24a5ed7cabf41f5626a52
+  specs:
+    puphpet-xdebug (0.0.1)
+
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-concat
+  ref: 1.1.0-rc1
+  sha: 650a73244df54dbe24c58ace438e2726f0c7c7b1
+  specs:
+    puppetlabs-concat (1.1.0-rc1)
+      puppetlabs-stdlib (>= 3.0.0)
+
+GIT
+  remote: git://github.com/puppetlabs/puppetlabs-mongodb
+  ref: 0518f864afcce2ebb79f1f2edab5de323c811af7
+  sha: 0518f864afcce2ebb79f1f2edab5de323c811af7
+  specs:
+    puppetlabs-mongodb (0.8.0)
+      puppetlabs-apt (>= 1.0.0)
+      puppetlabs-stdlib (>= 2.2.0)
+
+GIT
+  remote: git://github.com/tPl0ch/puppet-composer
+  ref: 1.2.1
+  sha: 75b79cde1ca4d586ca95aae97769342bb441fdd9
+  specs:
+    tPl0ch-composer (1.2.1)
+      puppetlabs-git (>= 0.0.2)
+
+DEPENDENCIES
+  example42-php (>= 0)
+  example42-puppi (>= 0)
+  jfryman-nginx (= 0.0.9)
+  logstash-logstash (>= 0)
+  maestrodev-rvm (= 1.5.5)
+  mikebell-mailcatcher (>= 0)
+  mikebell-solr (>= 0)
+  mikebell-xhprof (>= 0)
+  nextrevision-automysqlbackup (>= 0)
+  puphpet-xdebug (>= 0)
+  puppetlabs-apt (= 1.4.0)
+  puppetlabs-concat (>= 0)
+  puppetlabs-mongodb (>= 0)
+  puppetlabs-mysql (= 2.0.0)
+  puppetlabs-ruby (= 0.1.0)
+  puppetlabs-stdlib (= 4.1.0)
+  puppetlabs-vcsrepo (= 0.1.2)
+  tPl0ch-composer (>= 0)
+

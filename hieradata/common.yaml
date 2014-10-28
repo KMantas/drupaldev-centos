@@ -1,0 +1,14 @@
+---
+server:
+  packages:
+    - git-core
+    - build-essential
+    - curl
+    - wget
+    - zsh
+    - htop
+    - memcached
+    - unzip
+    - python-software-properties
+    - vim
+    - screen

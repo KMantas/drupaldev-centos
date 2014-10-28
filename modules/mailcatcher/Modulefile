@@ -1,0 +1,10 @@
+name    'mikebell-mailcatchet'
+version '1.0.0'
+source 'git@github.com:mikebell/puppet-mailcatcher.git'
+author 'mikebell'
+license 'WTFPL'
+summary 'A puppet module for mailcatcher'
+description 'Catch all mail before it hits the internet'
+project_page 'https://github.com/mikebell/puppet-mailcatcher'
+
+

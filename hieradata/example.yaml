@@ -1,0 +1,22 @@
+---
+sites:
+    vhosts:
+        example.drupal.dev:
+            server_name: example.drupal.dev
+            server_aliases:
+                - www.example.drupal.dev
+            www_root: /var/www/example.drupal.dev
+            listen_port: '80'
+            index_files:
+                - index.php
+    databases:
+        example:
+            grant:
+                - ALL
+            host: localhost
+            name: example
+            user: example
+            password: example
+            sql_file: ''
+    solr:
+        - example

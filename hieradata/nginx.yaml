@@ -1,0 +1,26 @@
+---
+nginx:
+  phpmodules:
+    - php-mysql
+    - php-cli
+    - php-curl
+    - php-intl
+    - php-mcrypt
+    - php-gd
+    - php-apc
+    - php-pecl-xdebug
+  phpini:
+    - display_errors = On
+    - error_reporting = -1
+    - date.timezone = "Europe/London"
+    - sendmail_path = "/opt/vagrant_ruby/bin/catchmail"
+    - xdebug.default_enable = 1
+    - xdebug.remote_autostart = 0
+    - xdebug.remote_connect_back = 1
+    - xdebug.remote_enable = 1
+    - xdebug.remote_handler = "dbgp"
+    - xdebug.remote_port = 9000
+    - apc.shm_size = 128M
+    - extension = mongo.so
+    - extension = xhprof.so
+    - xhprof.output_dir = "/var/www/local.artofliving.org/xhprof"
