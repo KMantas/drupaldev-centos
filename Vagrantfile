@@ -11,14 +11,14 @@ Vagrant.configure("2") do |config|
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     v.customize ["modifyvm", :id, "--memory", 1024]
     #v.customize ["modifyvm", :id, "--cpuexecutioncap", 80]
-    v.gui = true
+    #v.gui = true
   end
   
 
   #config.vm.synced_folder "./sites", "/var/www", type: "rsync", rsync__exclude: ".git/", rsync__auto: true
   config.vm.synced_folder "./sites", "/var/www", :nfs => true 
   
-  config.vm.provision :shell, :inline => "sudo yum update -y"
+  #config.vm.provision :shell, :inline => "sudo yum update -y"
   config.vm.provision :shell, :path => "upgrade_puppet.sh"
 
   config.vm.provision :puppet do |puppet|
